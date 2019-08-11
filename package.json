@@ -1,0 +1,14 @@
+{
+  "name": "ltljs",
+  "version": "0.0.0",
+  "description": "Linear Temporal Logic (LTL) for javascript",
+  "author": "Michael Jae-Yoon Chung",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "devDependencies": {
+    "fast-check": "^1.15.1"
+  }
+}
