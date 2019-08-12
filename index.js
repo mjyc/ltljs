@@ -11,11 +11,7 @@ function evalT(formula, lookup = () => {}) {
   if (typeof formula === "boolean") {
     return formula;
   } else if (typeof formula === "string") {
-    const val = lookup(formula);
-    if (typeof val !== "boolean") {
-      throw new Error(`lookup(formula) returned non-boolean value ${val}`);
-    }
-    return val;
+    return lookup(formula);
   }
 
   if (formula.type === LTLOperator.not) {
